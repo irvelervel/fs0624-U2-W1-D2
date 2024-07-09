@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: absolute</title>
+    <style>
+      .static {
+        position: static; /* valore di default */
+        border: 2px solid red;
+        margin-top: 10px;
+        /* left: 30px; */
+        /* le proprietà top, bottom, left e right NON HANNO EFFETTO su position: static */
+      }
+
+      .absolute {
+        position: absolute;
+        border: 2px solid violet;
+      }
+
+      .container {
+        margin-top: 100px;
+        border: 1px solid black;
+        width: 500px;
+        height: 300px;
+        /* fornisco al container position: relative in modo da fornire un "ancoraggio"
+        ai figli in absolute; */
+        position: relative;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+      }
+
+      #box1 {
+        border: 2px solid cyan;
+        bottom: 0;
+        left: 0;
+      }
+
+      #box2 {
+        border: 2px solid magenta;
+        bottom: 0;
+        right: 0;
+      }
+
+      .card {
+        margin-left: 131px;
+        border: 1px solid black;
+        height: 250px;
+        width: 180px;
+        margin-top: 200px;
+        position: relative;
+      }
+
+      .badge {
+        width: 50px;
+        height: 30px;
+        border: 2px solid red;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        position: absolute;
+        right: -15%;
+        top: -7%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: ABSOLUTE</h2>
+      <div>
+        Un elemento dotato di position: absolute viene RIMOSSO dal normale flow
+        della pagina. A differenza di position: relative, un elemento in
+        absolute ha come riferimento NON se stesso, ma i bordi della pagina
+        (mettendo ad es. bottom: 0, l'elemento va a posizionarsi sul fondo della
+        pagina). Un elemento dotato di position: absolute prenderà come
+        riferimento il più vicino elemento PADRE dotato di position: relative;
+        in mancanza di un padre dotato di position: relative, prende come
+        riferimento la finestra.
+      </div>
+      <div class="absolute">
+        Questo div è posizionato con position: absolute
+      </div>
+      <div class="static">Questo div è posizionato con position: static</div>
+
+      <div class="card">
+        <div class="badge"></div>
+      </div>
+
+      <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+      </div>
+    </main>
+  </body>
+</html>
