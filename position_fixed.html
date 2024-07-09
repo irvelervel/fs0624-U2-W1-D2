@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: fixed</title>
+    <style>
+      .fixed {
+        position: fixed;
+        /* position fixed permette di "ancorare" al viewport l'elemento */
+        /* utilizzando le proprietà top bottom left right */
+        bottom: 0;
+        background-color: aqua;
+        /* è molto probabile che position: fixed rimuoverà la width del 100% */
+        width: 100%;
+        text-align: center;
+        padding: 10px 0; /* padding a 10px sopra e sotto, 0 a destra e sinistra */
+      }
+
+      #scrolling-area {
+        margin-bottom: 25px;
+        /* questo margine pari più o meno all'altezza dell'area fixed serve a 
+        "spingere" un po' verso l'alto il contenuto scrollabile, in modo da rendere
+        visibile anche quella porzione che normalmente finirebbe nascosta
+        dietro l'area fissata */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>POSITION: FIXED</h2>
+      <div>
+        Un elemento dotato di position: fixed è posizionato in modo FISSO
+        rispetto al "viewport"; questo significa che il suo posizionamento NON
+        viene influenzato dalla posizione di scroll. Useremo come sempre le 4
+        proprietà top, bottom, left e right per posizionarlo.
+      </div>
+      <div id="scrolling-area">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rem
+        nisi unde distinctio ducimus ea odit natus officia eligendi explicabo
+        magnam itaque praesentium, mollitia consectetur beatae dolore dolores
+        aut doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugit, rem nisi unde distinctio ducimus ea odit natus officia eligendi
+        explicabo magnam itaque praesentium, mollitia consectetur beatae dolore
+        dolores aut doloribus. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit, rem nisi unde distinctio ducimus ea odit natus
+        officia eligendi explicabo magnam itaque praesentium, mollitia
+        consectetur beatae dolore dolores aut doloribus. Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Fugit, rem nisi unde distinctio
+        ducimus ea odit natus officia eligendi explicabo magnam itaque
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+        praesentium, mollitia consectetur beatae dolore dolores aut doloribus.
+      </div>
+      <div class="fixed">
+        <button>BOTTONE 1</button>
+        <button>BOTTONE 2</button>
+        <button>BOTTONE 3</button>
+        <button>BOTTONE 4</button>
+      </div>
+    </main>
+  </body>
+</html>
